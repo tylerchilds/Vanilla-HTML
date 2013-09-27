@@ -6,13 +6,13 @@ Vanilla HTML is a framework built on the concept of not requiring extra markup o
 Demo
 ----
 
-[Demo](http://tylerchilds.com/projects/vanilla)
+**[Demo](http://tylerchilds.com/projects/vanilla)**
 
 Getting Started
 ---------------
 
 1. Download [vanilla.css](https://raw.github.com/tylerchilds/Vanilla-HTML/master/css/vanilla.css)
-2. Add `&lt;link rel="stylesheet" href="vanilla.css">` to your html
+2. Add `<link rel="stylesheet" href="vanilla.css">` to your html
 3. Toss `class="vanilla"` on an element. I recommend `&lt;body class="vanilla">`
 
 ### Templates
