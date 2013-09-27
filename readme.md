@@ -12,44 +12,46 @@ Getting Started
 ---------------
 
 1. Download [vanilla.css](https://raw.github.com/tylerchilds/Vanilla-HTML/master/css/vanilla.css)
-2. Add `<link rel="stylesheet" href="vanilla.css">` to your html
-3. Toss `class="vanilla"` on an element. I recommend `<body class="vanilla">`
+2. Add `&lt;link rel="stylesheet" href="vanilla.css">` to your html
+3. Toss `class="vanilla"` on an element. I recommend `&lt;body class="vanilla">`
 
 ### Templates
 
+**[Download this basic Template](https://raw.github.com/tylerchilds/Vanilla-HTML/master/template.html)**
+
 <pre>
 
-`<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="initial-scale=1">
-        <link rel="stylesheet" href="css/vanilla.css">
-    </head>
-    <body class="vanilla">
-        <header>
-            <h1>Page Title</h1>
-        </header>
-        <hr />
-        <section>
-            <article>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta name="viewport" content="initial-scale=1"&gt;
+        &lt;link rel="stylesheet" href="css/vanilla.css"&gt;
+    &lt;/head&gt;
+    &lt;body class="vanilla"&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Page Title&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;hr /&gt;
+        &lt;section&gt;
+            &lt;article&gt;
                 Larger Left Column
-            </article>
-            <aside>
+            &lt;/article&gt;
+            &lt;aside&gt;
                 Smaller Right Column
-            </aside>
-        </section>
-        <hr />
-        <footer>
-            <section>
+            &lt;/aside&gt;
+        &lt;/section&gt;
+        &lt;hr /&gt;
+        &lt;footer&gt;
+            &lt;section&gt;
                 &copy; 2013, Tyler Childs
-            </section>
-        </footer>
-    </body>
-</html>`
+            &lt;/section&gt;
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 
 </pre>
 
-[Download this basic Template](https://raw.github.com/tylerchilds/Vanilla-HTML/master/template.html)
+**[Download this basic Template](https://raw.github.com/tylerchilds/Vanilla-HTML/master/template.html)**
 
 [Documentation] What you need to know
 ---------------------
