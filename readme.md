@@ -94,7 +94,7 @@ Here are a few tools I used to help bring this together better and faster than o
 + [CodeKit](http://incident57.com/codekit/)
 + [Less](http://lesscss.org/)
 + [Less Elements](http://lesselements.com/)
-+ [Normalize](git.io/normalize)
++ [Normalize](http://git.io/normalize)
 
 
 
