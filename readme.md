@@ -53,11 +53,15 @@ Getting Started
 
 **[Download this basic Template](https://raw.github.com/tylerchilds/Vanilla-HTML/master/template.html)**
 
-[Documentation] What you need to know
----------------------
+[Documentation]
+---------------
+
+### What you need to know
 
 **GRID:** Start a grid by adding class="vanilla" to an element. This is the only CSS class in the API. For a simple layout all you need is &lt;body class="vanilla"&gt;
+
 **ROWS:** Elements that are direct children of class="vanilla" will become ROWS.
+
 **COLUMNS:** Direct children of ROWS will be COLUMNS. Columns are weighted depending on the tag. header, section, nav, article, main, address, and footer tags produce a larger column when placed next to any other tag. Using this technique you can create an assortment of different column layouts. 
 
 **Note:** To achieve optimal responsive media, do not place media elements (img, video, iframe) as direct children of rows. 
