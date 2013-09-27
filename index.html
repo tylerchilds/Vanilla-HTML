@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Vanilla HTML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="author" href="humans.txt" />
+        <link rel="stylesheet" href="css/vanilla.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body class="vanilla">
+        <h1>Vanilla HTML</h1>
+        <hr />
+        <header>
+            <h3>Pure Markup</h3>
+            <section>
+                <p>Vanilla HTML is a framework built on the concept of not requiring extra markup or class attributes to attain a layout. Just write semantic HTML with some basic knowledge of Vanilla HTML and your layout is done. Seriously, now focus on the things that are actually important, like your design. Oh yeah and Vanilla HTML is 100% responsive.</p>
+            </section>
+        </header>
+
+        <hr />
+
+        <img src="img/abstract.jpg" />
+
+        <article>
+            <section>
+                <h4>Almost Magic</h4>
+                <div>
+                    <p>
+                        <strong>GRID:</strong> Start a grid by adding class="vanilla" to an element. This is the only CSS class in the API. For a simple layout all you need is &lt;body class="vanilla"&gt;
+                    <p>
+                    <p><strong>ROWS:</strong> Elements that are direct children of class="vanilla" will become ROWS.</p>
+                    <p>
+                        <strong>COLUMNS:</strong> Direct children of ROWS will be COLUMNS. Columns are weighted depending on the tag. header, section, nav, article, main, address, and footer tags produce a larger column when placed next to any other tag. Using this technique you can create an assortment of different column layouts.
+                    </p>
+                </div>
+            </section>
+            <aside>
+                <h4>Notes</h4>
+                <p>
+                    <strong>Note:</strong> To achieve optimal responsive media, do not place media elements (img, video, iframe, etc.) as direct children of rows. 
+                </p>
+                <p>
+                    <strong>Tables:</strong> It's a great idea to not use tables for grids, rows or columns, so great, in fact, NEVER do it. Just nest your tables inside a column and they'll play nice.
+                </p>
+            </aside>
+        </article>
+
+        <hr />
+
+        <h2>Three Equal Columns</h2>
+        <section>
+            <aside>
+                <h4>Who?</h4>
+                <p>Tyler Childs developed Vanilla HTML. He's a web designer and developer.</p>
+            </aside>
+            <aside>
+                <h4>What?</h4>
+                <p>Vanilla HTML. It's a framework with pure HTML markup, are you even listening?</p>
+            </aside>
+            <aside>
+                <h4>Why?</h4>
+                <p>Because he was tired of class attributes to determine page layouts.</p>
+            </aside>
+        </section>
+
+        <hr />
+
+        <h3>Code Examples</h3>
+        <section>
+            <h4>Layout Syntax</h4>
+            <section>
+                <pre>
+&lt;body class="vanilla"&gt;
+    &lt;h2>Two Column Layout&lt;/h2&gt;
+    &lt;section&gt;
+        &lt;h3&gt;This is column One&lt;/h3&gt;
+        &lt;aside&gt;
+            This is Column Two
+        &lt;/aside&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+                </pre>
+            </section>
+        </section>
+        <section>
+            <h4>Output</h4>
+            <section class="vanilla example">
+                <h2>Two Column Layout</h2>
+                <header>
+                    <h3>This is Column One</h3>
+                    <aside>
+                        This is Column Two
+                    </aside>
+                </header>
+            </section>
+        </section>
+
+
+        <hr />
+
+        <!--<h4>Nicholas Cage!</h4>
+        <article>
+            <div>
+                <img src="http://placecage.com/300/300" />
+            </div>
+
+            <div>
+                <img src="http://placecage.com/g/300/300" />
+            </div>
+
+            <div>
+                <img src="http://placecage.com/c/340/340" />
+            </div>
+
+            <div>
+                <img src="http://placecage.com/c/300/300" />
+            </div>
+
+        </article> -->
+
+        <h4>Forms</h4>
+        <section>
+            <form class="vanilla" action="javascript:donut(); return false;">
+                <h5>Horizontal</h5>
+                <div>
+                    <label>First Name</label>
+                    <input type="text" />
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" />
+                </div>
+                <div>
+                    <input type="submit" />
+                </div>
+            </form>
+            <pre>
+&lt;form class="vanilla"&gt;
+    &lt;h5&gt;Horizontal&lt;/h5&gt;
+    &lt;div&gt;
+        &lt;label&gt;First Name&lt;/label&gt;
+        &lt;input type="text" /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;label&gt;Email&lt;/label&gt;
+        &lt;input type="text" /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type="submit" /&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+            </pre>
+        </section>
+        <section>
+           <form class="vanilla" action="javascript:donut(); return false;">
+                <h5>Vertical</h5>
+                <label>First Name</label>
+                <input type="text" />
+                <label>Email</label>
+                <input type="text" />
+                <input type="submit" />
+            </form>
+            <pre>
+&lt;form class="vanilla"&gt;
+    &lt;h5&gt;Vertical&lt;/h5&gt;
+    &lt;label&gt;First Name&lt;/label&gt;
+    &lt;input type="text" /&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type="text" /&gt;
+    &lt;input type="submit" /&gt;
+&lt;/form&gt;
+            </pre>
+        </section>
+        <hr />
+
+        <h3>Column Variations</h3>
+        <div class="vanilla highlight">
+            <section>
+                <article>
+                    <p>1</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <p>1</p>
+                </article>
+                <aside>
+                    <p>2</p>
+                </aside>
+            </section>
+            <section>
+                <aside>
+                    <p>1</p>
+                </aside>
+                <article>
+                    <p>2</p>
+                </article>
+            </section>
+            <section>
+                <aside>
+                    <p>1</p>
+                </aside>
+                <article>
+                    <p>2</p>
+                </article>
+                <aside>
+                    <p>3</p>
+                </aside>
+            </section>
+            <section>
+                <article>
+                    <p>1</p>
+                </article>
+                <aside>
+                    <p>2</p>
+                </aside>
+                <aside>
+                    <p>3</p>
+                </aside>
+            </section>
+            <section>
+                <aside>
+                    <p>1</p>
+                </aside>
+                <aside>
+                    <p>2</p>
+                </aside>
+                <article>
+                    <p>3</p>
+                </article>
+            </section>
+            <section>
+                <aside>
+                    <p>1</p>
+                </aside>
+                <aside>
+                    <p>2</p>
+                </aside>
+                <aside>
+                    <p>3</p>
+                </aside>
+            </section>
+            <section>
+                <aside>
+                    <p>1</p>
+                </aside>
+                <aside>
+                    <p>2</p>
+                </aside>
+                <aside>
+                    <p>3</p>
+                </aside>
+                <aside>
+                    <p>4</p>
+                </aside>
+            </section>
+        </div>
+
+        <hr />
+
+        <h3>Browser Support</h3>
+        <article>
+            <aside>
+                IE 10+
+            </aside>
+            <aside>
+                Firefox 2+
+            </aside>
+            <aside>
+                Chrome 4+
+            </aside>
+            <aside>
+                Safari 3.1+
+            </aside>
+            <aside>
+                Opera 12.1+
+            </aside>
+            <aside>
+                iOS 3.2+
+            </aside>
+        </article>
+
+        <hr />
+        <footer class="vanilla">
+            <section>
+                <div>
+                    <h5>Brought to you in part by the National Science Foundation and Viewers like you!</h5>
+                    <p> Not really. It was built by <a href="http://www.tylerchilds.com" target="_blank">Tyler Childs</a> with the help of <a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a>, <a href="http://incident57.com/codekit/" target="_blank">CodeKit</a>, <a href="http://lesscss.org/" target="_blank">Less</a>, <a href="http://lesselements.com/" target="_blank">Less Elements</a>, and <a href="git.io/normalize" target="_blank">Normalize</a>.
+                </div>
+            </section>
+            <div>
+                <small>
+                    &copy; 2013, Tyler Childs
+                </small>
+            </div>
+        </footer>
+    </body>
+</html>

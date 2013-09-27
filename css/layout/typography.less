@@ -1,0 +1,100 @@
+@borders: #cccccc;
+
+body{
+	font-family: 'Droid Serif', 'Times New Roman', serif;
+  font-size: 100%;
+  line-height: 1.8em;
+  margin-top: 55px;
+
+  & > *{
+    font-size: 1em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  /*font-family: Helvetica;*/
+  font-weight: 200;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+}
+
+h1
+{
+  font-size: 3em;
+}
+
+h2
+{
+  font-size: 2.6em;
+}
+
+h3
+{
+  font-size: 2.2em;
+}
+
+h4
+{
+  font-size: 1.8em;
+}
+
+h5
+{
+  font-size: 1.4em;
+}
+
+h6
+{
+  font-size: 1.2em;
+}
+
+p, ul, ol{
+  margin-bottom: 13px;
+}
+
+a:link{
+  color: #008EB4;
+}
+a:visited{
+   color: spin(#008EB4, 72);
+}
+
+a:hover, a:focus{
+  color: lighten(#008EB4, 5%);
+}
+a:active{
+  text-decoration: none;
+}
+
+table{
+  border-top: 1px solid @borders;
+  border-left: 1px solid @borders;
+  width: 100%;
+}
+tr{
+  border-bottom: 1px solid @borders;
+}
+
+th, td{
+  border-right: 1px solid @borders;
+  padding: 3px;
+}
+
+input[type="submit"],
+input[type="button"],
+button{
+  .rounded(3px);
+  .gradient(#f8f8f8, #f0f0f0, #ffffff);
+  border: 1px solid #e0e0e0;
+  padding: 5px 8px;
+  font-size: .9em;
+
+  &:hover, &:focus{
+    .gradient(#f0f0f0, #e8e8e8, #f8f8f8);
+  }
+  &:active{
+    .gradient(#e8e8e8, #f8f8f8, #e8e8e8);
+  }
+}

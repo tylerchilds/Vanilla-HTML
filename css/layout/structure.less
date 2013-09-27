@@ -1,0 +1,102 @@
+img,
+embed,
+video,
+object
+{
+	max-width: 100%;
+	height: auto;
+}
+
+iframe{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+.vanilla{
+
+	& > *:not(.vanilla){
+		margin-bottom: 55px;
+
+		display: -webkit-box;		/* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;			/* OLD - Firefox 19- (buggy but mostly works) */
+		display: box;
+		display: -ms-flexbox;		/* TWEENER - IE 10 */
+		display: -webkit-flex;		/* NEW - Chrome */
+		display: flex; 
+
+		& > *{
+			display: block;
+			width: 0;
+			width: 100%\9;
+			-moz-box-flex: 4.0; /* Firefox */
+			-webkit-box-flex: 4.0; /* Safari and Chrome */
+			box-flex: 4.0;
+			-webkit-flex-grow: 4;
+			-moz-flex-grow: 4;
+			-ms-flex-grow: 4;
+			flex-grow: 4;
+			margin: 0 21px;
+		}
+
+		& > header,
+		& > section,
+		& > nav,
+		& > article,
+		& > main,
+		& > address,
+		& > footer{
+			-moz-box-flex: 8.0; /* Firefox */
+			-webkit-box-flex: 8.0; /* Safari and Chrome */
+			box-flex: 8.0;
+			-webkit-flex-grow: 8;
+			-moz-flex-grow: 8;
+			-ms-flex-grow: 8;
+			flex-grow: 8;
+		}
+
+		& > input[type="submit"],
+		& > input[type="button"],
+		& > button{
+			-moz-box-flex: 0; /* Firefox */
+			-webkit-box-flex: 0; /* Safari and Chrome */
+			box-flex: 0;
+			-webkit-flex-grow: 0;
+			-moz-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+			width: auto;
+		}
+	}
+
+	& > input:not(.vanilla),
+	& > label:not(.vanilla),
+	& > select:not(.vanilla),
+	& > datalist:not(.vanilla),
+	& > button:not(.vanilla),
+	& > output:not(.vanilla),
+	& > progress:not(.vanilla),
+	& > textarea:not(.vanilla),
+	& > meter:not(.vanilla){
+		margin-bottom: 13px;
+	}
+}
+
+form.vanilla{
+
+	& > *:not(.vanilla){
+		margin-bottom: 13px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.vanilla > *:not(.vanilla){
+		display: block;
+
+		& > *{
+			width: auto;
+			margin-bottom: 21px;
+		}
+	}
+}
