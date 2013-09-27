@@ -84,3 +84,25 @@ Flexbox stuff is still pretty new, so older browsers don't support it. Below are
 If these are not good enough and you want a polyfill, you should be able to use [flexie](https://github.com/doctyper/flexie). In case you're wondering, I implemented the old spec and the new spec of flexbox (formerly box) so this polyfill should still work. I chose not to implement the polyfill because this is a framework built for the future.
 
 For more detailed information on the browser support of flexbox: [caniuse.com/flexbox](http://caniuse.com/flexbox)
+
+Credits & Attribution
+---------------------
+
+Here are a few tools I used to help bring this together better and faster than on my own.
+
++ [HTML5 Boilerplate](http://html5boilerplate.com/)
++ [CodeKit](http://incident57.com/codekit/)
++ [Less](http://lesscss.org/)
++ [Less Elements](http://lesselements.com/)
++ [Normalize](git.io/normalize)
+
+
+
+
+
+
+
+
+
+
+
