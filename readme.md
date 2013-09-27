@@ -13,7 +13,7 @@ Getting Started
 
 1. Download [vanilla.css](https://raw.github.com/tylerchilds/Vanilla-HTML/master/css/vanilla.css)
 2. Add `<link rel="stylesheet" href="vanilla.css">` to your html
-3. Toss `class="vanilla"` on an element. I recommend `&lt;body class="vanilla">`
+3. Toss `class="vanilla"` on an element. I recommend `<body class="vanilla">`
 
 ### Templates
 
@@ -81,7 +81,9 @@ Flexbox stuff is still pretty new, so older browsers don't support it. Below are
 + Opera 12.1+
 + iOS 3.2+
 
-If these are not good enough and you want a polyfill, you should be able to use [flexie](https://github.com/doctyper/flexie). In case you're wondering, I implemented the old spec and the new spec of flexbox (formerly box) so this polyfill should still work. I chose not to implement the polyfill because this is a framework built for the future.
+For IE 7, 8 and 9, the layout collapses to 1 column. It works about 90% to my liking in those browsers, but considering it's IE, I'm 100% okay with it.
+
+If these are not good enough and you want a polyfill, you should be able to use [flexie](https://github.com/doctyper/flexie). In case you're wondering, I implemented the old spec and the new spec of flexbox (formerly: box) so this polyfill should still work. I chose not to implement the polyfill because this is a framework built for the future.
 
 For more detailed information on the browser support of flexbox: [caniuse.com/flexbox](http://caniuse.com/flexbox)
 
