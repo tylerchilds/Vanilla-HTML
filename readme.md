@@ -11,7 +11,7 @@ Demo
 Getting Started
 ---------------
 
-1. Download [vanilla.css]
+1. Download [vanilla.css](https://raw.github.com/tylerchilds/Vanilla-HTML/master/css/vanilla.css)
 2. Add `<link rel="stylesheet" href="vanilla.css">` to your html
 3. Toss `class="vanilla"` on an element. I recommend `<body class="vanilla">`
 
@@ -19,7 +19,7 @@ Getting Started
 
 <pre>
 
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="initial-scale=1">
@@ -45,9 +45,11 @@ Getting Started
             </section>
         </footer>
     </body>
-</html>
+</html>`
 
 </pre>
+
+[Download this basic Template](https://raw.github.com/tylerchilds/Vanilla-HTML/master/template.html)
 
 [Documentation] What you need to know
 ---------------------
