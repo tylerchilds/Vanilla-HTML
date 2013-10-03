@@ -53,6 +53,12 @@ Getting Started
 
 **[Download this basic Template](https://raw.github.com/tylerchilds/Vanilla-HTML/master/template.html)**
 
+### Use Vanilla with existing HTML
+
+Want to use Vanilla somewhere in your existing code? Include [vanilla-extract.css](https://raw.github.com/tylerchilds/Vanilla-HTML/master/css/vanilla-extract.css)
+
+Then add class="vanilla" to an element and the descendants will behave accordingly.
+
 [Documentation]
 ---------------
 
