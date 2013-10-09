@@ -15,7 +15,7 @@
 		height: auto;
 	}
 
-	& > *:not(.vanilla){
+	& > *:not(.vanilla):not(script){
 		margin-bottom: 55px;
 		float: none;
 
@@ -26,7 +26,7 @@
 		display: -webkit-flex;		/* NEW - Chrome */
 		display: flex; 
 
-		& > *{
+		& > *:not(script){
 			float: none;
 			display: block;
 			width: 0;
