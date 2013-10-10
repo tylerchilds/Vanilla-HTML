@@ -15,7 +15,7 @@
 		height: auto;
 	}
 
-	& > *:not(.vanilla):not(script){
+	& > *:not(.vanilla){
 		margin-bottom: 55px;
 		float: none;
 
@@ -26,7 +26,7 @@
 		display: -webkit-flex;		/* NEW - Chrome */
 		display: flex; 
 
-		& > *:not(script){
+		& > *{
 			float: none;
 			display: block;
 			width: 0;
@@ -69,6 +69,10 @@
 			flex-grow: 0;
 			width: auto;
 		}
+
+		& > script{
+			display: none !important;
+		}
 	}
 
 	& > input:not(.vanilla),
@@ -81,6 +85,10 @@
 	& > textarea:not(.vanilla),
 	& > meter:not(.vanilla){
 		margin-bottom: 13px;
+	}
+
+	& > script{
+		display: none !important;
 	}
 }
 
@@ -97,8 +105,17 @@ form.vanilla{
 		display: block;
 
 		& > *{
+			display: block;
 			width: auto;
 			margin-bottom: 21px;
 		}
+
+		& > script{
+			display: none !important;
+		}
+	}
+
+	& > script{
+		display: none !important;
 	}
 }

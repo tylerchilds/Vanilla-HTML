@@ -37,6 +37,7 @@ textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
+  min-width: 280px;
 }
 ::-moz-selection {
   background: #b3d4fc;
@@ -789,7 +790,7 @@ body.vanilla > * {
   width: 100%;
   height: auto;
 }
-.vanilla > *:not(.vanilla):not(script) {
+.vanilla > *:not(.vanilla) {
   margin-bottom: 55px;
   float: none;
   display: -webkit-box;
@@ -807,7 +808,7 @@ body.vanilla > * {
 
   display: flex;
 }
-.vanilla > *:not(.vanilla):not(script) > *:not(script) {
+.vanilla > *:not(.vanilla) > * {
   float: none;
   display: block;
   width: 0;
@@ -825,13 +826,13 @@ body.vanilla > * {
   flex-grow: 4;
   margin: 0 21px;
 }
-.vanilla > *:not(.vanilla):not(script) > header,
-.vanilla > *:not(.vanilla):not(script) > section,
-.vanilla > *:not(.vanilla):not(script) > nav,
-.vanilla > *:not(.vanilla):not(script) > article,
-.vanilla > *:not(.vanilla):not(script) > main,
-.vanilla > *:not(.vanilla):not(script) > address,
-.vanilla > *:not(.vanilla):not(script) > footer {
+.vanilla > *:not(.vanilla) > header,
+.vanilla > *:not(.vanilla) > section,
+.vanilla > *:not(.vanilla) > nav,
+.vanilla > *:not(.vanilla) > article,
+.vanilla > *:not(.vanilla) > main,
+.vanilla > *:not(.vanilla) > address,
+.vanilla > *:not(.vanilla) > footer {
   -moz-box-flex: 8.0;
   /* Firefox */
 
@@ -844,9 +845,9 @@ body.vanilla > * {
   -ms-flex-grow: 8;
   flex-grow: 8;
 }
-.vanilla > *:not(.vanilla):not(script) > input[type="submit"],
-.vanilla > *:not(.vanilla):not(script) > input[type="button"],
-.vanilla > *:not(.vanilla):not(script) > button {
+.vanilla > *:not(.vanilla) > input[type="submit"],
+.vanilla > *:not(.vanilla) > input[type="button"],
+.vanilla > *:not(.vanilla) > button {
   -moz-box-flex: 0;
   /* Firefox */
 
@@ -860,6 +861,9 @@ body.vanilla > * {
   flex-grow: 0;
   width: auto;
 }
+.vanilla > *:not(.vanilla) > script {
+  display: none !important;
+}
 .vanilla > input:not(.vanilla),
 .vanilla > label:not(.vanilla),
 .vanilla > select:not(.vanilla),
@@ -871,6 +875,9 @@ body.vanilla > * {
 .vanilla > meter:not(.vanilla) {
   margin-bottom: 13px;
 }
+.vanilla > script {
+  display: none !important;
+}
 form.vanilla > *:not(.vanilla) {
   margin-bottom: 13px;
 }
@@ -879,8 +886,15 @@ form.vanilla > *:not(.vanilla) {
     display: block;
   }
   .vanilla > *:not(.vanilla) > * {
+    display: block;
     width: auto;
     margin-bottom: 21px;
+  }
+  .vanilla > *:not(.vanilla) > script {
+    display: none !important;
+  }
+  > script {
+    display: none !important;
   }
 }
 @media (min-width: 980px) {
