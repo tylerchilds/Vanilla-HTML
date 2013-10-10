@@ -882,11 +882,11 @@ form.vanilla > *:not(.vanilla) {
   margin-bottom: 13px;
 }
 .vanilla > .not-vanilla {
-  display: block !important;
-  width: auto !important;
+  display: block;
+  width: auto;
 }
 .vanilla > .not-vanilla > * {
-  width: auto !important;
+  width: auto;
 }
 @media (max-width: 768px) {
   .vanilla > *:not(.vanilla) {
