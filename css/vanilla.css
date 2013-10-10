@@ -881,6 +881,13 @@ body.vanilla > * {
 form.vanilla > *:not(.vanilla) {
   margin-bottom: 13px;
 }
+.vanilla > .not-vanilla {
+  display: block !important;
+  width: auto !important;
+}
+.vanilla > .not-vanilla > * {
+  width: auto !important;
+}
 @media (max-width: 768px) {
   .vanilla > *:not(.vanilla) {
     display: block;

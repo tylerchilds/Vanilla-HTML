@@ -99,6 +99,15 @@ form.vanilla{
 	}
 }
 
+.vanilla > .not-vanilla{
+	display: block !important;
+	width: auto !important;
+
+	& > *{
+		width: auto !important;
+	}
+}
+
 @media (max-width: 768px) {
 
 	.vanilla > *:not(.vanilla){
