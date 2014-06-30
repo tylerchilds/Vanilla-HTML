@@ -6,7 +6,7 @@ Vanilla HTML is a framework built on the concept of not requiring extra markup o
 Demo
 ----
 
-**[Demo](http://tylerchilds.com/projects/vanilla)**
+**[View Demo](http://tylerchilds.github.io/vanilla-html/demo.html)**
 
 Getting Started
 ---------------
