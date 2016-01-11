@@ -3,7 +3,7 @@ Vanilla HTML
 
 Vanilla HTML is a framework built on the concept of not requiring extra markup or class attributes to attain a layout. Just write semantic HTML with some basic knowledge of Vanilla HTML and your layout is done. Seriously, now focus on the things that are actually important, like your design. Oh yeah and Vanilla HTML is 100% responsive.
 
-**[View Demo](http://tylerchilds.github.io/vanilla-html/demo.html)**
+**[View Demo](http://tylerchilds.com/projects/vanilla-html/demo.html)**
 
 Getting Started
 ---------------
